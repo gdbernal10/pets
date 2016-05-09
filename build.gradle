@@ -1,0 +1,25 @@
+plugins {
+    id "com.moowork.grunt" version "0.10"
+}
+
+group 'com.uniandes.pets'
+version '1.0'
+
+apply plugin: 'maven'
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.5
+war.dependsOn grunt_dist
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.6' //version required
+}
