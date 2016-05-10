@@ -1,0 +1,96 @@
+<div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/index.html">{{APP_NAME}}</a>
+            </div>
+            <!--div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <input type="text" class="form-control" placeholder="Search...">
+                </form>
+            </div-->
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar" style="position:fixed;">
+                <ul class="nav nav-sidebar">
+                    <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Reportes</a></li>
+                    <li><a href="#">Analisis</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <h1 class="page-header">Dashboard</h1>
+
+                <div class="row placeholders">
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <div ng-show="petSelected.id != undefined">
+                            <img ng-src="images/dogs/{{petSelected.img}}" width="200px" height="200px" alt="Generic placeholder thumbnail">
+                            <h4>{{petSelected.name}}</h4>
+                            <span class="text-muted">{{petSelected.age}} años</span>
+                        </div>
+                        <div ng-show="petSelected.id === undefined">
+                            <img ng-src="images/dogs/default.png" width="200px" height="200px" alt="Generic placeholder thumbnail">
+                            <h4>Name</h4>
+                            <span class="text-muted">Age</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <!--div ng-show="petSelected.healthState === undefined">
+                            <img ng-src="images/other/green.png" width="100px" height="100px" alt="Generic placeholder thumbnail">
+                        </div-->
+                        <div ng-show="petSelected.healthState == 'good'">
+                            <img ng-src="images/other/green.png" width="100px" height="100px" alt="Generic placeholder thumbnail">
+                        </div>
+                        <div ng-show="petSelected.healthState == 'bad'">
+                            <img ng-src="images/other/red.jpeg" width="100px" height="100px" alt="Generic placeholder thumbnail">
+                        </div>
+                        <h4>Label</h4>
+                        <span class="text-muted">Something else</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="100px" height="100px" alt="Generic placeholder thumbnail">
+                        <h4>Label</h4>
+                        <span class="text-muted">Something else</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="100px" height="100px" alt="Generic placeholder thumbnail">
+                        <h4>Label</h4>
+                        <span class="text-muted">Something else</span>
+                    </div>
+                </div>
+
+                <h2 class="sub-header">Todos</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Gender</th>
+                                <th>Health State</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="pet in pets">
+                                <td><a href="" class="a_link" ng-click="showSelectedPetInfo(pet)"> <div> {{pet.id}} </div></a></td>
+                                <td><a href="" class="a_link" ng-click="showSelectedPetInfo(pet)"> <div> {{pet.name}} </div></a></td>
+                                <td><a href="" class="a_link" ng-click="showSelectedPetInfo(pet)"> <div> {{pet.age}} </div></a></td>
+                                <td><a href="" class="a_link" ng-click="showSelectedPetInfo(pet)"> <div> {{pet.gender}} </div></a></td>
+                                <td><a href="" class="a_link" ng-click="showSelectedPetInfo(pet)"> <div> {{pet.healthState}} </div></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
