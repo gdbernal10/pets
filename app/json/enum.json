@@ -1,0 +1,23 @@
+{
+	"att_cls":[
+		{
+			"name":"N/A",
+			"value":0
+		},{
+			"name":"Low",
+			"value":1
+		},{
+			"name":"Medium - Low",
+			"value":2
+		},{
+			"name":"Medium",
+			"value":3
+		},{
+			"name":"Medium - High",
+			"value":4
+		},{
+			"name":"High",
+			"value":5
+		},
+	]
+}

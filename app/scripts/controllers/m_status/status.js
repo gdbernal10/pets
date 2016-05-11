@@ -22,6 +22,7 @@ angular.module('pets')
             //    {id:15,name:'lazy2',age:'15',gender:'female',healthState:'Bad',img:"15.jpeg"}
             //];
             getPets();
+            getRaces();
             $scope.petSelected = {};
             $scope.module = {};
         }
@@ -30,20 +31,31 @@ angular.module('pets')
 
 
         $scope.showSelectedPetInfo = function(pet){
-            $scope.petSelected = pet;
+            var race = null;
+            $scope.races
+                .some(function(e,i,arr){
+                    if(e.race == pet.race){
+                        race = e;
+                        return true;
+                    }
+                });
+            $scope.petSelected = {pet:pet,race: race};
         }
         $scope.setCurrentModule = function(e){
-            //console.log(e);
             $scope.module={id:e.currentTarget.id,name:e.currentTarget.name};
         }
         
         function getPets(){
             $.getJSON("json/pets_medical.json", function(json) {
-                //console.log(json); // this will show the info it in firebug console
                 $scope.pets = json;
             });
         }
-        
+
+        function getRaces(){
+            $.getJSON("json/races_data.json", function(json) {
+                $scope.races = json;
+            });
+        }
         
         
     }]);

@@ -27,41 +27,41 @@
                 </ul>
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                <h1 class="page-header">{{petSelected.name}}</h1>
+                <h1 class="page-header">{{petSelected.pet.name}}</h1>
 
                 <div class="row placeholders">
                     <div class="col-xs-6 col-sm-3 placeholder">
-                        <div ng-show="petSelected.id != undefined">
-                            <img ng-src="images/dogs/{{petSelected.img}}" width="200px" height="200px" alt="Generic placeholder thumbnail">
-                            <h4>{{petSelected.race}}</h4>
-                            <span class="text-muted">{{petSelected.age}} años</span>
+                        <div ng-show="petSelected.pet.id != undefined">
+                            <img ng-src="images/dogs/{{petSelected.pet.img1}}" width="200px" height="200px" alt="Generic placeholder thumbnail">
+                            <h4>{{petSelected.pet.race}}</h4>
+                            <span class="text-muted">{{petSelected.pet.age}} años</span>
                         </div>
-                        <div ng-show="petSelected.id === undefined">
+                        <div ng-show="petSelected.pet.id === undefined">
                             <img ng-src="images/dogs/default.png" width="200px" height="200px" alt="Generic placeholder thumbnail">
                             <h4>Name</h4>
                             <span class="text-muted">Age</span>
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-2 placeholder">
-                        <div ng-show="petSelected.healthState != undefined">
+                        <div ng-show="petSelected.pet.healthState != undefined">
                             <img class="img_holder" ng-src="images/other/state.jpeg" width="100px" height="100px" alt="Generic placeholder thumbnail">
-                            <h4 ng-if="petSelected.healthState == 'Healthy'" style="color:mediumseagreen;">{{petSelected.healthState}}</h4>
-                            <h4 ng-if="petSelected.healthState == 'Sick'" style="color:red;">{{petSelected.healthState}}</h4>
+                            <h4 ng-if="petSelected.pet.healthState == 'Healthy'" style="color:mediumseagreen;">{{petSelected.pet.healthState}}</h4>
+                            <h4 ng-if="petSelected.pet.healthState == 'Sick'" style="color:red;">{{petSelected.pet.healthState}}</h4>
                             <span class="text-muted">State</span>
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-2 placeholder">
                         <a id="m_info" name="Information" href="" ng-click="setCurrentModule($event)">
-                        <div ng-show="petSelected.healthState != undefined">
+                        <div ng-show="petSelected.pet.healthState != undefined">
                             <img class="img_holder" ng-src="images/other/Info.png" width="100px" height="100px" alt="Generic placeholder thumbnail">
-                            <h4>¿Who is {{petSelected.name}} ?</h4>
+                            <h4>¿Who is {{petSelected.pet.name}} ?</h4>
                             <span class="text-muted">Information</span>
                         </div>
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-2 placeholder">
                         <a id="m_mh_info" name="Medical History" href="" ng-click="setCurrentModule($event)">
-                            <div ng-show="petSelected.healthState != undefined">
+                            <div ng-show="petSelected.pet.healthState != undefined">
                                 <img class="img_holder" ng-src="images/other/MedicalH.png" width="100px" height="100px">
                                 <h4>Medical History</h4>
                                 <span class="text-muted">Information</span>
@@ -70,7 +70,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-2 placeholder">
                         <a id="m_predic" name="Prediction" href="" ng-click="setCurrentModule($event)">
-                            <div ng-show="petSelected.healthState != undefined">
+                            <div ng-show="petSelected.pet.healthState != undefined">
                                 <img class="img_holder" ng-src="images/other/prediction.png" width="100px" height="100px">
                                 <h4>Future</h4>
                                 <span class="text-muted">Prediction</span>
@@ -78,23 +78,82 @@
                         </a>
                     </div>
                 </div>
-                <h2 class="sub-header">{{module.name}}</h2>
-                <div class="row top1" ng-if="module.id === 'm_info'">
-                    <div class="col-sm-3">
-                        <p><b>Name:</b></p>{{petSelected.name}}
+                <h1 class="sub-header"><b>{{module.name}}</b></h1>
+                <div ng-if="module.id === 'm_info'">
+                    <div class="row top15">
+                        <div class="col-sm-3">
+                            <p><b>Name:</b></p>{{petSelected.pet.name}}
+                        </div>
+                        <div class="col-sm-3">
+                            <p><b>Age:</b></p>{{petSelected.pet.age}}
+                        </div>
+                        <div class="col-sm-3">
+                            <p><b>Gender:</b></p>{{petSelected.pet.gender}}
+                        </div>
+                        <div class="col-sm-3">
+                            <p><b>Race:</b></p>{{petSelected.pet.race}}
+                        </div>
                     </div>
-                    <div class="col-sm-3">
-                        <p><b>Age:</b></p>{{petSelected.age}}
+                    <h1 class="sub-header"><b>Race</b></h1>
+                    <div class="row top15">
+                        <div class="col-sm-3">
+                            <p><b>Min Pounds:</b></p>{{petSelected.race.min_pounds}}
+                        </div>
+                        <div class="col-sm-3">
+                            <p><b>Max Pounds:</b></p>{{petSelected.race.max_pounds}}
+                        </div>
+                        <div class="col-sm-3">
+                            <p><b>Adapts Well to Apartment Living:</b></p>{{petSelected.race.Adapts_Well_to_Apartment_Living}}
+                        </div>
+                        <div class="col-sm-3">
+                            <p><b>Affectionate with Family:</b></p>{{petSelected.race.Affectionate_with_Family}}
+                        </div>
                     </div>
-                    <div class="col-sm-3">
-                        <p><b>Gender:</b></p>{{petSelected.gender}}
+                    <div class="row top15">
+                        <div class="col-sm-3">
+                            <p><b>Amount Of Shedding:</b></p>{{petSelected.race.Amount_Of_Shedding}}
+                        </div>
+                        <div class="col-sm-3">
+                            <p><b>Dog Friendly:</b></p>{{petSelected.race.Dog_Friendly}}
+                        </div>
+                        <div class="col-sm-3">
+                            <p><b>Drooling Potential:</b></p>{{petSelected.race.Drooling_Potential}}
+                        </div>
+                        <div class="col-sm-3">
+                            <p><b>Easy To Groom:</b></p>{{petSelected.race.Easy_To_Groom}}
+                        </div>
                     </div>
-                    <div class="col-sm-3">
-                        <p><b>Race:</b></p>{{petSelected.race}}
+                    <div class="row top15">
+                        <div class="col-sm-3">
+                            <p><b>Easy To Train:</b></p>{{petSelected.race.Easy_To_Train}}
+                        </div>
+                        <div class="col-sm-3">
+                            <p><b>Energy Level:</b></p>{{petSelected.race.Energy_Level}}
+                        </div>
+                        <div class="col-sm-3">
+                            <p><b>Exercise Needs:</b></p>{{petSelected.race.Exercise_Needs}}
+                        </div>
+                        <div class="col-sm-3">
+                            <p><b>Friendly Toward Strangers:</b></p>{{petSelected.race.Friendly_Toward_Strangers}}
+                        </div>
+                    </div>
+                    <div class="row top15">
+                        <div class="col-sm-3">
+                            <p><b>General Health:</b></p>{{petSelected.race.General_Health}}
+                        </div>
+                        <div class="col-sm-3">
+                            <p><b>Good For Novice Owners:</b></p>{{petSelected.race.Good_For_Novice_Owners}}
+                        </div>
+                        <div class="col-sm-3">
+                            <p><b>Kid Friendly:</b></p>{{petSelected.race.Incredibly_Kid_Friendly_Dogs}}
+                        </div>
+                        <div class="col-sm-3">
+                            <p><b>Friendly Toward Strangers:</b></p>{{petSelected.race.Intelligence}}
+                        </div>
                     </div>
                 </div>
                 <div ng-if="module.id === 'm_mh_info'">
-                    <div ng-repeat="info in petSelected.medical_history">
+                    <div ng-repeat="info in petSelected.pet.medical_history">
                         <div class="row top15">
                             <div class="col-sm-3">
                                 <p><b>Fecha:</b></p>{{info.fecha_consulta}}

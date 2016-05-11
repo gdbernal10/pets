@@ -3,7 +3,7 @@
 	"name" : "Loki",
 	"age" : "5",
 	"gender" : "female",
-	"race" : "Labrador Retriever",
+	"race" : "Akita",
 	"healthState" : "Healthy",
 	"img" : "1.jpeg",
 	"medical_history" : [{
@@ -371,7 +371,7 @@
 	"name" : "Vianca",
 	"age" : "9",
 	"gender" : "female",
-	"race" : "Pit Bull",
+	"race" : "Beagle",
 	"healthState" : "Sick",
 	"img" : "9.jpeg",
 	"medical_history" : [{
