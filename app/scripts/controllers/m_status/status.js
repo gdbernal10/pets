@@ -1,9 +1,10 @@
 (function(){
-angular.module('pets')
-    .controller('statusCtrl',['$scope', function($scope){
+angular.module('status')
+    .controller('statusCtrl',['$scope','$http', function($scope,$http){
 
         function init(){
             $scope.APP_NAME = "Mascotas";
+            $scope.m_config = "Config";
             //$scope.pets = [
             //    {id:1,name:'lazy',age:'1',gender:'female',healthState:'good',img:"1.jpeg",lastMonth_td:"",total_td:""},
             //    {id:2,name:'lazy1',age:'2',gender:'male',healthState:'good',img:"2.jpeg"},
@@ -25,6 +26,7 @@ angular.module('pets')
             getRaces();
             $scope.petSelected = {};
             $scope.module = {};
+
         }
 
         init();
@@ -39,12 +41,32 @@ angular.module('pets')
                         return true;
                     }
                 });
-            $scope.petSelected = {pet:pet,race: race};
+            $scope.petSelected = {pet:pet,race: race,predict:"None"};
         }
         $scope.setCurrentModule = function(e){
             $scope.module={id:e.currentTarget.id,name:e.currentTarget.name};
         }
-        
+
+        $scope.predict = function(pet){
+            //$http.defaults.headers.common['Authorization'] = 'Basic YWRtaW46YWRtaW4=';
+            var json = [[pet.race,pet.heart_fre,pet.temp,pet.weight,pet.resp_min]];
+            //$http.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
+            //$http.post('https://ec2-52-36-54-240.us-west-2.compute.amazonaws.com:9443/api/models/11/predict',json,
+            $http.post('http://ec2-52-36-54-240.us-west-2.compute.amazonaws.com:3003/api/predict/11',json,
+                {
+                headers:{
+                    'Content-Type':'application/json'
+                    //, 'Authorization':'Basic YWRtaW46YWRtaW4='
+                }
+                }).success(function(data) {
+                    $scope.petSelected.predict = data[0];
+                })
+                .error(function(error, data) {
+                    $scope.petSelected.predict = "Error";
+                });
+            //$scope.petSelected.predict = pet.Res_pre;
+        }
+
         function getPets(){
             $.getJSON("json/pets_medical.json", function(json) {
                 $scope.pets = json;

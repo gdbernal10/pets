@@ -1,0 +1,70 @@
+<div class="top15">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar" style="position:fixed;">
+                <ul class="nav nav-sidebar" ng-repeat="config in configs">
+                    <li>
+                        <a href="#" ng-click="showSelectedConfigInfo(config)">Active Config</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <h1 class="sub-header"><b>Configurations</b></h1>
+                <ng-form autocomplete="off" name="mainForm" class="col-sm-12" novalidate >
+                    <div class="row" ng-show="activeForm">
+                        <div class="col-sm-4">
+                            <div class="form-group" ng-show="configSelected.cfg">
+                                <label>DataSetId<i class="ast">*</i></label>
+                                <div>
+                                    <input class="form-control" type="text" aa-field="dataSetId"
+                                           aa-label="DataSetId" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 top15">
+                            <div class="form-group" >
+                                <input type="submit" value="Save" class="btn btn-success" ng-click="saveConfig()"/>
+                            </div>
+                        </div>
+                    </div>
+                <h2 class="sub-header"><b>Fields</b></h2>
+                <div class="table-responsive" ng-show="configSelected.cfg.config">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Field</th>
+                                    <th>
+                                        <div ng-show="activeForm">
+                                            <button type="button" class="btn btn-info" ng-click="newConfig()">New</button>
+                                        </div>
+                                        <div ng-show="!activeForm && modelExec">
+                                            <button type="button" class="btn btn-info" ng-click="execute()">Execute Model</button>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="v in configSelected.values">
+                                    <td>
+                                        <a href="" class="a_link" ng-click="edit(v)">
+                                            <div ng-show="!v.edit"> {{v.value}} </div>
+                                            <div ng-show="v.edit">
+                                                <input class="form-control" type="text" aa-field="v.value" aa-label="Nombre" required>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <div ng-show="activeForm">
+                                            <button ng-show ="v.edit" type="button" class="btn btn-success" ng-click="apply(v)">Apply</button>
+                                            <button type="button" class="btn btn-danger" ng-click="deleteField(v)">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+                </ng-form>
+            </div>
+        </div>
+    </div>
+</div>

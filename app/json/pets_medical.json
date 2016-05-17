@@ -6,42 +6,47 @@
 	"race" : "Akita",
 	"healthState" : "Healthy",
 	"img" : "1.jpeg",
+	"heart_fre": 56.9,
+	"temp": 38,
+	"weight": 7,
+	"resp_min": 13.5,
+	"Res_pre":"NO ENFERMO",
 	"medical_history" : [{
-			"diagnostico" : "Parasitos",
-			"id_mascota" : 1,
-			"tipo_consulta" : "Urgencia",
-			"costo" : "268073.0718",
-			"motivo_consulta" : "Vomito recurrente",
-			"fecha_consulta" : "2014-12-06",
-			"medicamentos" : [{
-					"nro_ICA" : 558341,
-					"nombre_medicamento" : "APIGUARD",
-					"principio_activo" : "FLUMETRINA",
-					"via_administracion" : "Oral"
-				}
-			],
-			"anomalias" : "Ojos rojos, Vientre Inflamado",
-			"tratamiento" : "Antibioticos por 8 días",
-			"nro_registro" : 107757
-		}, {
-			"diagnostico" : "Cambio de cornea",
-			"id_mascota" : 1,
-			"tipo_consulta" : "Consulta",
-			"costo" : "1058752.7976",
-			"motivo_consulta" : "Cambio de cornea",
-			"fecha_consulta" : "2015-09-01",
-			"medicamentos" : [{
-					"nro_ICA" : 234208,
-					"nombre_medicamento" : "AMICEL VARROA",
-					"principio_activo" : "CUMAFOS",
-					"via_administracion" : "Oral"
-				}
-			],
-			"anomalias" : "Fiebre",
-			"evolucion" : "No presenta inflamación en las encias",
-			"tratamiento" : "Operacion con inserción de platinos en el pie derecho",
-			"nro_registro" : 77631
+		"diagnostico" : "Parasitos",
+		"id_mascota" : 1,
+		"tipo_consulta" : "Urgencia",
+		"costo" : "268073.0718",
+		"motivo_consulta" : "Vomito recurrente",
+		"fecha_consulta" : "2014-12-06",
+		"medicamentos" : [{
+			"nro_ICA" : 558341,
+			"nombre_medicamento" : "APIGUARD",
+			"principio_activo" : "FLUMETRINA",
+			"via_administracion" : "Oral"
 		}
+		],
+		"anomalias" : "Ojos rojos, Vientre Inflamado",
+		"tratamiento" : "Antibioticos por 8 días",
+		"nro_registro" : 107757
+	}, {
+		"diagnostico" : "Cambio de cornea",
+		"id_mascota" : 1,
+		"tipo_consulta" : "Consulta",
+		"costo" : "1058752.7976",
+		"motivo_consulta" : "Cambio de cornea",
+		"fecha_consulta" : "2015-09-01",
+		"medicamentos" : [{
+			"nro_ICA" : 234208,
+			"nombre_medicamento" : "AMICEL VARROA",
+			"principio_activo" : "CUMAFOS",
+			"via_administracion" : "Oral"
+		}
+		],
+		"anomalias" : "Fiebre",
+		"evolucion" : "No presenta inflamación en las encias",
+		"tratamiento" : "Operacion con inserción de platinos en el pie derecho",
+		"nro_registro" : 77631
+	}
 	]
 }, {
 	"id" : 2,
@@ -51,43 +56,48 @@
 	"race" : "Golden Retriever",
 	"healthState" : "Healthy",
 	"img" : "2.jpeg",
+	"heart_fre": 99,
+	"temp": 47.7,
+	"weight": 51.6,
+	"resp_min": 20.7,
+	"Res_pre":"ENFERMO",
 	"medical_history" : [{
-			"diagnostico" : "Fractura pata derecha",
-			"id_mascota" : 2,
-			"tipo_consulta" : "Urgencia",
-			"costo" : "390783.721",
-			"motivo_consulta" : "Accidente",
-			"fecha_consulta" : "2015-07-11",
-			"medicamentos" : [{
-					"nro_ICA" : 1527915,
-					"nombre_medicamento" : "APIGUARD",
-					"principio_activo" : "AMITRAZ",
-					"via_administracion" : "Oral"
-				}
-			],
-			"anomalias" : "Dolor recurrente",
-			"evolucion" : "",
-			"tratamiento" : "Inmovilizar extermidad por 30 días",
-			"nro_registro" : 4258
-		}, {
-			"diagnostico" : "Ataque de otro animal",
-			"id_mascota" : 2,
-			"tipo_consulta" : "Consulta",
-			"costo" : "1796552.5045",
-			"motivo_consulta" : "Dolor e inflamación en el codo",
-			"fecha_consulta" : "2014-03-13",
-			"medicamentos" : [{
-					"nro_ICA" : 1049468,
-					"nombre_medicamento" : "APIVAR",
-					"principio_activo" : "CUMAFOS",
-					"via_administracion" : "TIMOL"
-				}
-			],
-			"anomalias" : "Objeto extraño en el vientre",
-			"evolucion" : "Se puede observar que la herida ya cerro",
-			"tratamiento" : "Operacion con inserción de platinos en el pie derecho",
-			"nro_registro" : 141140
+		"diagnostico" : "Fractura pata derecha",
+		"id_mascota" : 2,
+		"tipo_consulta" : "Urgencia",
+		"costo" : "390783.721",
+		"motivo_consulta" : "Accidente",
+		"fecha_consulta" : "2015-07-11",
+		"medicamentos" : [{
+			"nro_ICA" : 1527915,
+			"nombre_medicamento" : "APIGUARD",
+			"principio_activo" : "AMITRAZ",
+			"via_administracion" : "Oral"
 		}
+		],
+		"anomalias" : "Dolor recurrente",
+		"evolucion" : "",
+		"tratamiento" : "Inmovilizar extermidad por 30 días",
+		"nro_registro" : 4258
+	}, {
+		"diagnostico" : "Ataque de otro animal",
+		"id_mascota" : 2,
+		"tipo_consulta" : "Consulta",
+		"costo" : "1796552.5045",
+		"motivo_consulta" : "Dolor e inflamación en el codo",
+		"fecha_consulta" : "2014-03-13",
+		"medicamentos" : [{
+			"nro_ICA" : 1049468,
+			"nombre_medicamento" : "APIVAR",
+			"principio_activo" : "CUMAFOS",
+			"via_administracion" : "TIMOL"
+		}
+		],
+		"anomalias" : "Objeto extraño en el vientre",
+		"evolucion" : "Se puede observar que la herida ya cerro",
+		"tratamiento" : "Operacion con inserción de platinos en el pie derecho",
+		"nro_registro" : 141140
+	}
 	]
 }, {
 	"id" : 3,
@@ -97,43 +107,48 @@
 	"race" : "German Shepherd",
 	"healthState" : "Sick",
 	"img" : "3.jpeg",
+	"heart_fre": 109.4,
+	"temp": 35.4,
+	"weight": 68.7,
+	"resp_min": 12,
+	"Res_pre":"ENFERMO",
 	"medical_history" : [{
-			"diagnostico" : "Dolor e inflamación en el codo",
-			"id_mascota" : 3,
-			"tipo_consulta" : "Urgencia",
-			"costo" : "358705.4391",
-			"motivo_consulta" : "Parasitos",
-			"fecha_consulta" : "2014-11-29",
-			"medicamentos" : [{
-					"nro_ICA" : 375768,
-					"nombre_medicamento" : "APIVAR",
-					"principio_activo" : "AMITRAZ",
-					"via_administracion" : "Oral"
-				}
-			],
-			"anomalias" : "Fiebre",
-			"evolucion" : "Se puede observar que la herida ya cerro",
-			"tratamiento" : "Pierna inmovilizada",
-			"nro_registro" : 24468
-		}, {
-			"diagnostico" : "Encías palidas e inflamadas",
-			"id_mascota" : 3,
-			"tipo_consulta" : "Urgencia",
-			"costo" : "188243.6522",
-			"motivo_consulta" : "Parasitos",
-			"fecha_consulta" : "2015-04-05",
-			"medicamentos" : [{
-					"nro_ICA" : 1806700,
-					"nombre_medicamento" : "APIVAR",
-					"principio_activo" : "CUMAFOS",
-					"via_administracion" : "TIMOL"
-				}
-			],
-			"anomalias" : "Objeto extraño en el vientre",
-			"evolucion" : "Se puede observar que la herida ya cerro",
-			"tratamiento" : "Pierna inmovilizada",
-			"nro_registro" : 152548
+		"diagnostico" : "Dolor e inflamación en el codo",
+		"id_mascota" : 3,
+		"tipo_consulta" : "Urgencia",
+		"costo" : "358705.4391",
+		"motivo_consulta" : "Parasitos",
+		"fecha_consulta" : "2014-11-29",
+		"medicamentos" : [{
+			"nro_ICA" : 375768,
+			"nombre_medicamento" : "APIVAR",
+			"principio_activo" : "AMITRAZ",
+			"via_administracion" : "Oral"
 		}
+		],
+		"anomalias" : "Fiebre",
+		"evolucion" : "Se puede observar que la herida ya cerro",
+		"tratamiento" : "Pierna inmovilizada",
+		"nro_registro" : 24468
+	}, {
+		"diagnostico" : "Encías palidas e inflamadas",
+		"id_mascota" : 3,
+		"tipo_consulta" : "Urgencia",
+		"costo" : "188243.6522",
+		"motivo_consulta" : "Parasitos",
+		"fecha_consulta" : "2015-04-05",
+		"medicamentos" : [{
+			"nro_ICA" : 1806700,
+			"nombre_medicamento" : "APIVAR",
+			"principio_activo" : "CUMAFOS",
+			"via_administracion" : "TIMOL"
+		}
+		],
+		"anomalias" : "Objeto extraño en el vientre",
+		"evolucion" : "Se puede observar que la herida ya cerro",
+		"tratamiento" : "Pierna inmovilizada",
+		"nro_registro" : 152548
+	}
 	]
 } ,{
 	"id" : 4,
@@ -143,43 +158,48 @@
 	"race" : "Boxer",
 	"healthState" : "Sick",
 	"img" : "4.jpeg",
+	"heart_fre": 145.4,
+	"temp": 29.4,
+	"weight": 42.8,
+	"resp_min": 15.8,
+	"Res_pre":"NO ENFERMO",
 	"medical_history" : [{
-			"diagnostico" : "Fractura pierna",
-			"id_mascota" : 4,
-			"tipo_consulta" : "Urgencia",
-			"costo" : "2377987.9815",
-			"motivo_consulta" : "Parasitos",
-			"fecha_consulta" : "2014-06-03",
-			"medicamentos" : [{
-					"nro_ICA" : 863169,
-					"nombre_medicamento" : "CHECKMITE",
-					"principio_activo" : "CUMAFOS",
-					"via_administracion" : "Oral"
-				}
-			],
-			"anomalias" : "Encías palidas e inflamdas",
-			"evolucion" : "Se puede observar que la herida ya cerro",
-			"tratamiento" : "Operacion con inserción de platinos en el pie derecho",
-			"nro_registro" : 40500
-		}, {
-			"diagnostico" : "Parasitos",
-			"id_mascota" : 4,
-			"tipo_consulta" : "Consulta",
-			"costo" : "2833063.9129",
-			"motivo_consulta" : "Dolor e inflamación en el codo",
-			"fecha_consulta" : "2014-04-02",
-			"medicamentos" : [{
-					"nro_ICA" : 402055,
-					"nombre_medicamento" : "APIVAR",
-					"principio_activo" : "FLUMETRINA",
-					"via_administracion" : "TIMOL"
-				}
-			],
-			"anomalias" : "Fiebre",
-			"evolucion" : "No aplica",
-			"tratamiento" : "Antibioticos por 8 días",
-			"nro_registro" : 76328
+		"diagnostico" : "Fractura pierna",
+		"id_mascota" : 4,
+		"tipo_consulta" : "Urgencia",
+		"costo" : "2377987.9815",
+		"motivo_consulta" : "Parasitos",
+		"fecha_consulta" : "2014-06-03",
+		"medicamentos" : [{
+			"nro_ICA" : 863169,
+			"nombre_medicamento" : "CHECKMITE",
+			"principio_activo" : "CUMAFOS",
+			"via_administracion" : "Oral"
 		}
+		],
+		"anomalias" : "Encías palidas e inflamdas",
+		"evolucion" : "Se puede observar que la herida ya cerro",
+		"tratamiento" : "Operacion con inserción de platinos en el pie derecho",
+		"nro_registro" : 40500
+	}, {
+		"diagnostico" : "Parasitos",
+		"id_mascota" : 4,
+		"tipo_consulta" : "Consulta",
+		"costo" : "2833063.9129",
+		"motivo_consulta" : "Dolor e inflamación en el codo",
+		"fecha_consulta" : "2014-04-02",
+		"medicamentos" : [{
+			"nro_ICA" : 402055,
+			"nombre_medicamento" : "APIVAR",
+			"principio_activo" : "FLUMETRINA",
+			"via_administracion" : "TIMOL"
+		}
+		],
+		"anomalias" : "Fiebre",
+		"evolucion" : "No aplica",
+		"tratamiento" : "Antibioticos por 8 días",
+		"nro_registro" : 76328
+	}
 	]
 }, {
 	"id" : 5,
@@ -189,43 +209,48 @@
 	"race" : "Pug",
 	"healthState" : "Sick",
 	"img" : "5.jpeg",
+	"heart_fre": 58.4,
+	"temp": 40,
+	"weight": 78,
+	"resp_min": 42.5,
+	"Res_pre":"ENFERMO",
 	"medical_history" : [{
-			"diagnostico" : "Ataque de otro animal",
-			"id_mascota" : 5,
-			"tipo_consulta" : "Consulta",
-			"costo" : "1205801.9203",
-			"motivo_consulta" : "Objeto extraño en el vientre",
-			"fecha_consulta" : "2014-10-17",
-			"medicamentos" : [{
-					"nro_ICA" : 1443407,
-					"nombre_medicamento" : "APIGUARD",
-					"principio_activo" : "AMITRAZ",
-					"via_administracion" : "Oral"
-				}
-			],
-			"anomalias" : "Fiebre",
-			"evolucion" : "No presenta inflamación en las encias",
-			"tratamiento" : "Operacion con inserción de platinos en el pie derecho",
-			"nro_registro" : 112743
-		}, {
-			"diagnostico" : "Control de cirugía",
-			"id_mascota" : 5,
-			"tipo_consulta" : "Urgencia",
-			"costo" : "2033272.0675",
-			"motivo_consulta" : "Dolor e inflamación en el codo",
-			"fecha_consulta" : "2015-04-11",
-			"medicamentos" : [{
-					"nro_ICA" : 96646,
-					"nombre_medicamento" : "CHECKMITE",
-					"principio_activo" : "CUMAFOS",
-					"via_administracion" : "TIMOL"
-				}
-			],
-			"anomalias" : "Ojos rojos",
-			"evolucion" : "No presenta inflamación en las encias",
-			"tratamiento" : "Operacion con inserción de platinos en el pie derecho",
-			"nro_registro" : 62346
+		"diagnostico" : "Ataque de otro animal",
+		"id_mascota" : 5,
+		"tipo_consulta" : "Consulta",
+		"costo" : "1205801.9203",
+		"motivo_consulta" : "Objeto extraño en el vientre",
+		"fecha_consulta" : "2014-10-17",
+		"medicamentos" : [{
+			"nro_ICA" : 1443407,
+			"nombre_medicamento" : "APIGUARD",
+			"principio_activo" : "AMITRAZ",
+			"via_administracion" : "Oral"
 		}
+		],
+		"anomalias" : "Fiebre",
+		"evolucion" : "No presenta inflamación en las encias",
+		"tratamiento" : "Operacion con inserción de platinos en el pie derecho",
+		"nro_registro" : 112743
+	}, {
+		"diagnostico" : "Control de cirugía",
+		"id_mascota" : 5,
+		"tipo_consulta" : "Urgencia",
+		"costo" : "2033272.0675",
+		"motivo_consulta" : "Dolor e inflamación en el codo",
+		"fecha_consulta" : "2015-04-11",
+		"medicamentos" : [{
+			"nro_ICA" : 96646,
+			"nombre_medicamento" : "CHECKMITE",
+			"principio_activo" : "CUMAFOS",
+			"via_administracion" : "TIMOL"
+		}
+		],
+		"anomalias" : "Ojos rojos",
+		"evolucion" : "No presenta inflamación en las encias",
+		"tratamiento" : "Operacion con inserción de platinos en el pie derecho",
+		"nro_registro" : 62346
+	}
 	]
 }, {
 	"id" : 6,
@@ -235,43 +260,48 @@
 	"race" : "Rottweiler",
 	"healthState" : "Sick",
 	"img" : "6.jpeg",
+	"heart_fre": 45.5,
+	"temp": 33.2,
+	"weight": 84,
+	"resp_min": 15,
+	"Res_pre":"ENFERMO",
 	"medical_history" : [{
-			"diagnostico" : "Parasitos",
-			"id_mascota" : 6,
-			"tipo_consulta" : "Consulta",
-			"costo" : "2142534.5919",
-			"motivo_consulta" : "Ataque de otro animal",
-			"fecha_consulta" : "2014-04-04",
-			"medicamentos" : [{
-					"nro_ICA" : 540309,
-					"nombre_medicamento" : "AMICEL VARROA",
-					"principio_activo" : "CUMAFOS",
-					"via_administracion" : "Oral"
-				}
-			],
-			"anomalias" : "Objeto extraño en el vientre",
-			"evolucion" : "No presenta inflamación en las encias",
-			"tratamiento" : "Pierna inmovilizada",
-			"nro_registro" : 12378
-		}, {
-			"diagnostico" : "Ataque de otro animal",
-			"id_mascota" : 6,
-			"tipo_consulta" : "Consulta",
-			"costo" : "386937.9427",
-			"motivo_consulta" : "Dolor e inflamación en el codo",
-			"fecha_consulta" : "2015-11-08",
-			"medicamentos" : [{
-					"nro_ICA" : 1155755,
-					"nombre_medicamento" : "ECOXAL",
-					"principio_activo" : "TIMOL",
-					"via_administracion" : "TIMOL"
-				}
-			],
-			"anomalias" : "Encías palidas e inflamdas",
-			"evolucion" : "No presenta inflamación en las encias",
-			"tratamiento" : "Operacion con inserción de platinos en el pie derecho",
-			"nro_registro" : 102003
+		"diagnostico" : "Parasitos",
+		"id_mascota" : 6,
+		"tipo_consulta" : "Consulta",
+		"costo" : "2142534.5919",
+		"motivo_consulta" : "Ataque de otro animal",
+		"fecha_consulta" : "2014-04-04",
+		"medicamentos" : [{
+			"nro_ICA" : 540309,
+			"nombre_medicamento" : "AMICEL VARROA",
+			"principio_activo" : "CUMAFOS",
+			"via_administracion" : "Oral"
 		}
+		],
+		"anomalias" : "Objeto extraño en el vientre",
+		"evolucion" : "No presenta inflamación en las encias",
+		"tratamiento" : "Pierna inmovilizada",
+		"nro_registro" : 12378
+	}, {
+		"diagnostico" : "Ataque de otro animal",
+		"id_mascota" : 6,
+		"tipo_consulta" : "Consulta",
+		"costo" : "386937.9427",
+		"motivo_consulta" : "Dolor e inflamación en el codo",
+		"fecha_consulta" : "2015-11-08",
+		"medicamentos" : [{
+			"nro_ICA" : 1155755,
+			"nombre_medicamento" : "ECOXAL",
+			"principio_activo" : "TIMOL",
+			"via_administracion" : "TIMOL"
+		}
+		],
+		"anomalias" : "Encías palidas e inflamdas",
+		"evolucion" : "No presenta inflamación en las encias",
+		"tratamiento" : "Operacion con inserción de platinos en el pie derecho",
+		"nro_registro" : 102003
+	}
 	]
 }, {
 	"id" : 7,
@@ -281,43 +311,48 @@
 	"race" : "Siberian Husky",
 	"healthState" : "Healthy",
 	"img" : "7.jpeg",
+	"heart_fre": 168.5,
+	"temp": 52.7,
+	"weight": 11.8,
+	"resp_min": 38.4,
+	"Res_pre":"NO ENFERMO",
 	"medical_history" : [{
-			"diagnostico" : "Objeto extraño en el vientre",
-			"id_mascota" : 7,
-			"tipo_consulta" : "Consulta",
-			"costo" : "437995.4476",
-			"motivo_consulta" : "Objeto extraño en el vientre",
-			"fecha_consulta" : "2014-03-18",
-			"medicamentos" : [{
-					"nro_ICA" : 1072463,
-					"nombre_medicamento" : "ECOXAL",
-					"principio_activo" : "AMITRAZ",
-					"via_administracion" : "TIMOL"
-				}
-			],
-			"anomalias" : "Fiebre",
-			"evolucion" : "No aplica",
-			"tratamiento" : "Limpiar la herida cada 4 horas",
-			"nro_registro" : 45831
-		}, {
-			"diagnostico" : "Control de cirugía",
-			"id_mascota" : 7,
-			"tipo_consulta" : "Consulta",
-			"costo" : "2039380.141",
-			"motivo_consulta" : "Parasitos",
-			"fecha_consulta" : "2015-10-19",
-			"medicamentos" : [{
-					"nro_ICA" : 1741104,
-					"nombre_medicamento" : "CHECKMITE",
-					"principio_activo" : "TIMOL",
-					"via_administracion" : "TIMOL"
-				}
-			],
-			"anomalias" : "Fiebre",
-			"evolucion" : "Se puede observar que la herida ya cerro",
-			"tratamiento" : "Operacion con inserción de platinos en el pie derecho",
-			"nro_registro" : 46764
+		"diagnostico" : "Objeto extraño en el vientre",
+		"id_mascota" : 7,
+		"tipo_consulta" : "Consulta",
+		"costo" : "437995.4476",
+		"motivo_consulta" : "Objeto extraño en el vientre",
+		"fecha_consulta" : "2014-03-18",
+		"medicamentos" : [{
+			"nro_ICA" : 1072463,
+			"nombre_medicamento" : "ECOXAL",
+			"principio_activo" : "AMITRAZ",
+			"via_administracion" : "TIMOL"
 		}
+		],
+		"anomalias" : "Fiebre",
+		"evolucion" : "No aplica",
+		"tratamiento" : "Limpiar la herida cada 4 horas",
+		"nro_registro" : 45831
+	}, {
+		"diagnostico" : "Control de cirugía",
+		"id_mascota" : 7,
+		"tipo_consulta" : "Consulta",
+		"costo" : "2039380.141",
+		"motivo_consulta" : "Parasitos",
+		"fecha_consulta" : "2015-10-19",
+		"medicamentos" : [{
+			"nro_ICA" : 1741104,
+			"nombre_medicamento" : "CHECKMITE",
+			"principio_activo" : "TIMOL",
+			"via_administracion" : "TIMOL"
+		}
+		],
+		"anomalias" : "Fiebre",
+		"evolucion" : "Se puede observar que la herida ya cerro",
+		"tratamiento" : "Operacion con inserción de platinos en el pie derecho",
+		"nro_registro" : 46764
+	}
 	]
 }, {
 	"id" : 8,
@@ -327,44 +362,49 @@
 	"race" : "Dalmatian",
 	"healthState" : "Sick",
 	"img" : "8.jpeg",
+	"heart_fre": 57.5,
+	"temp": 40.4,
+	"weight": 212.3,
+	"resp_min": 15.7,
+	"Res_pre":"ENFERMO",
 	"medical_history" : [{
-			"diagnostico" : "Parasitos",
-			"id_mascota" : 8,
-			"tipo_consulta" : "Consulta",
-			"costo" : "1378976.0964",
-			"motivo_consulta" : "Control de cirugía",
-			"fecha_consulta" : "2014-06-17",
-			"medicamentos" : [{
-					"nro_ICA" : 558341,
-					"nombre_medicamento" : "APIGUARD",
-					"principio_activo" : "FLUMETRINA",
-					"duracion_tratamiento" : 27,
-					"via_administracion" : "TIMOL"
-				}
-			],
-			"anomalias" : "No aplica",
-			"evolucion" : "Se puede observar que la herida ya cerro",
-			"tratamiento" : "Pierna inmovilizada",
-			"nro_registro" : 46010
-		}, {
-			"diagnostico" : "Control de cirugía",
-			"id_mascota" : 8,
-			"tipo_consulta" : "Urgencia",
-			"costo" : "928660.3829",
-			"motivo_consulta" : "Fractura pierna",
-			"fecha_consulta" : "2015-07-03",
-			"medicamentos" : [{
-					"nro_ICA" : 1228397,
-					"nombre_medicamento" : "ECOXAL",
-					"principio_activo" : "FLUMETRINA",
-					"via_administracion" : "TIMOL"
-				}
-			],
-			"anomalias" : "Objeto extraño en el vientre",
-			"evolucion" : "Se puede observar que la herida ya cerro",
-			"tratamiento" : "Pierna inmovilizada",
-			"nro_registro" : 148936
+		"diagnostico" : "Parasitos",
+		"id_mascota" : 8,
+		"tipo_consulta" : "Consulta",
+		"costo" : "1378976.0964",
+		"motivo_consulta" : "Control de cirugía",
+		"fecha_consulta" : "2014-06-17",
+		"medicamentos" : [{
+			"nro_ICA" : 558341,
+			"nombre_medicamento" : "APIGUARD",
+			"principio_activo" : "FLUMETRINA",
+			"duracion_tratamiento" : 27,
+			"via_administracion" : "TIMOL"
 		}
+		],
+		"anomalias" : "No aplica",
+		"evolucion" : "Se puede observar que la herida ya cerro",
+		"tratamiento" : "Pierna inmovilizada",
+		"nro_registro" : 46010
+	}, {
+		"diagnostico" : "Control de cirugía",
+		"id_mascota" : 8,
+		"tipo_consulta" : "Urgencia",
+		"costo" : "928660.3829",
+		"motivo_consulta" : "Fractura pierna",
+		"fecha_consulta" : "2015-07-03",
+		"medicamentos" : [{
+			"nro_ICA" : 1228397,
+			"nombre_medicamento" : "ECOXAL",
+			"principio_activo" : "FLUMETRINA",
+			"via_administracion" : "TIMOL"
+		}
+		],
+		"anomalias" : "Objeto extraño en el vientre",
+		"evolucion" : "Se puede observar que la herida ya cerro",
+		"tratamiento" : "Pierna inmovilizada",
+		"nro_registro" : 148936
+	}
 	]
 }, {
 	"id" : 9,
@@ -374,43 +414,48 @@
 	"race" : "Beagle",
 	"healthState" : "Sick",
 	"img" : "9.jpeg",
+	"heart_fre": 161.81,
+	"temp": 38.07,
+	"weight": 24.78,
+	"resp_min": 40.03,
+	"Res_pre":"NO ENFERMO",
 	"medical_history" : [{
-			"diagnostico" : "Encías palidas e inflamdas",
-			"id_mascota" : 9,
-			"tipo_consulta" : "Consulta",
-			"costo" : "922244.7931",
-			"motivo_consulta" : "Ataque de otro animal",
-			"fecha_consulta" : "2014-03-09",
-			"medicamentos" : [{
-					"nro_ICA" : 247076,
-					"nombre_medicamento" : "ECOXAL",
-					"principio_activo" : "CUMAFOS",
-					"via_administracion" : "TIMOL"
-				}
-			],
-			"anomalias" : "Ojos rojos",
-			"evolucion" : "No presenta inflamación en las encias",
-			"tratamiento" : "Operacion con inserción de platinos en el pie derecho",
-			"nro_registro" : 88884
-		}, {
-			"diagnostico" : "Dolor e inflamación en el codo",
-			"id_mascota" : 9,
-			"tipo_consulta" : "Urgencia",
-			"costo" : "2917266.5936",
-			"motivo_consulta" : "Fractura pierna",
-			"fecha_consulta" : "2014-08-11",
-			"medicamentos" : [{
-					"nro_ICA" : 540309,
-					"nombre_medicamento" : "AMICEL VARROA",
-					"principio_activo" : "CUMAFOS",
-					"via_administracion" : "Oral"
-				}
-			],
-			"anomalias" : "Fiebre",
-			"evolucion" : "No presenta inflamación en las encias",
-			"tratamiento" : "Pierna inmovilizada",
-			"nro_registro" : 150269
+		"diagnostico" : "Encías palidas e inflamdas",
+		"id_mascota" : 9,
+		"tipo_consulta" : "Consulta",
+		"costo" : "922244.7931",
+		"motivo_consulta" : "Ataque de otro animal",
+		"fecha_consulta" : "2014-03-09",
+		"medicamentos" : [{
+			"nro_ICA" : 247076,
+			"nombre_medicamento" : "ECOXAL",
+			"principio_activo" : "CUMAFOS",
+			"via_administracion" : "TIMOL"
 		}
+		],
+		"anomalias" : "Ojos rojos",
+		"evolucion" : "No presenta inflamación en las encias",
+		"tratamiento" : "Operacion con inserción de platinos en el pie derecho",
+		"nro_registro" : 88884
+	}, {
+		"diagnostico" : "Dolor e inflamación en el codo",
+		"id_mascota" : 9,
+		"tipo_consulta" : "Urgencia",
+		"costo" : "2917266.5936",
+		"motivo_consulta" : "Fractura pierna",
+		"fecha_consulta" : "2014-08-11",
+		"medicamentos" : [{
+			"nro_ICA" : 540309,
+			"nombre_medicamento" : "AMICEL VARROA",
+			"principio_activo" : "CUMAFOS",
+			"via_administracion" : "Oral"
+		}
+		],
+		"anomalias" : "Fiebre",
+		"evolucion" : "No presenta inflamación en las encias",
+		"tratamiento" : "Pierna inmovilizada",
+		"nro_registro" : 150269
+	}
 	]
 }, {
 	"id" : 10,
@@ -420,42 +465,47 @@
 	"race" : "Chow Chow",
 	"healthState" : "Healthy",
 	"img" : "10.jpeg",
+	"heart_fre": 154.6,
+	"temp": 35.51,
+	"weight": 14.67,
+	"resp_min": 42.53,
+	"Res_pre":"NO ENFERMO",
 	"medical_history" : [{
-			"diagnostico" : "Objeto extraño en el vientre",
-			"id_mascota" : 10,
-			"tipo_consulta" : "Urgencia",
-			"costo" : "1654516.6043",
-			"motivo_consulta" : "Dolor e inflamación en el codo",
-			"fecha_consulta" : "2014-07-25",
-			"medicamentos" : [{
-					"nro_ICA" : 1660586,
-					"nombre_medicamento" : "ECOXAL",
-					"principio_activo" : "TIMOL",
-					"via_administracion" : "TIMOL"
-				}
-			],
-			"anomalias" : "Encías palidas e inflamdas",
-			"evolucion" : "Se puede observar que la herida ya cerro",
-			"tratamiento" : "Operacion con inserción de platinos en el pie derecho",
-			"nro_registro" : 134781
-		}, {
-			"diagnostico" : "Encías palidas e inflamdas",
-			"id_mascota" : 10,
-			"tipo_consulta" : "Urgencia",
-			"costo" : "344405.4725",
-			"motivo_consulta" : "Dolor e inflamación en el codo",
-			"fecha_consulta" : "2014-01-17",
-			"medicamentos" : [{
-					"nro_ICA" : 635010,
-					"nombre_medicamento" : "AMICEL VARROA",
-					"principio_activo" : "TIMOL",
-					"via_administracion" : "TIMOL"
-				}
-			],
-			"anomalias" : "Fiebre",
-			"evolucion" : "No aplica",
-			"tratamiento" : "Limpiar la herida cada 4 horas",
-			"nro_registro" : 3969
+		"diagnostico" : "Objeto extraño en el vientre",
+		"id_mascota" : 10,
+		"tipo_consulta" : "Urgencia",
+		"costo" : "1654516.6043",
+		"motivo_consulta" : "Dolor e inflamación en el codo",
+		"fecha_consulta" : "2014-07-25",
+		"medicamentos" : [{
+			"nro_ICA" : 1660586,
+			"nombre_medicamento" : "ECOXAL",
+			"principio_activo" : "TIMOL",
+			"via_administracion" : "TIMOL"
 		}
+		],
+		"anomalias" : "Encías palidas e inflamdas",
+		"evolucion" : "Se puede observar que la herida ya cerro",
+		"tratamiento" : "Operacion con inserción de platinos en el pie derecho",
+		"nro_registro" : 134781
+	}, {
+		"diagnostico" : "Encías palidas e inflamdas",
+		"id_mascota" : 10,
+		"tipo_consulta" : "Urgencia",
+		"costo" : "344405.4725",
+		"motivo_consulta" : "Dolor e inflamación en el codo",
+		"fecha_consulta" : "2014-01-17",
+		"medicamentos" : [{
+			"nro_ICA" : 635010,
+			"nombre_medicamento" : "AMICEL VARROA",
+			"principio_activo" : "TIMOL",
+			"via_administracion" : "TIMOL"
+		}
+		],
+		"anomalias" : "Fiebre",
+		"evolucion" : "No aplica",
+		"tratamiento" : "Limpiar la herida cada 4 horas",
+		"nro_registro" : 3969
+	}
 	]
 }]

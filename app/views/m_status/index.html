@@ -1,22 +1,4 @@
-<div>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/index.html">{{APP_NAME}}</a>
-            </div>
-            <!--div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-                <form class="navbar-form navbar-right">
-                    <input type="text" class="form-control" placeholder="Search...">
-                </form>
-            </div-->
-        </div>
-    </nav>
+<div class="top15">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-3 col-md-2 sidebar" style="position:fixed;">
@@ -69,11 +51,13 @@
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-2 placeholder">
-                        <a id="m_predic" name="Prediction" href="" ng-click="setCurrentModule($event)">
+                        <a id="m_predic" name="Prediction" href="" ng-click="predict(petSelected.pet)">
                             <div ng-show="petSelected.pet.healthState != undefined">
                                 <img class="img_holder" ng-src="images/other/prediction.png" width="100px" height="100px">
-                                <h4>Future</h4>
-                                <span class="text-muted">Prediction</span>
+                                <h4 ng-if="petSelected.predict == 'NO ENFERMO'" style="color:mediumseagreen;">{{petSelected.predict}}</h4>
+                                <h4 ng-if="petSelected.predict == 'ENFERMO'" style="color:red;">{{petSelected.predict}}</h4>
+                                <h4 ng-if="petSelected.predict == 'Error'" style="color:red;">{{petSelected.predict}}</h4>
+                                <span class="text-muted">Prediction: <b>Aorthic stenosis</b></span>
                             </div>
                         </a>
                     </div>
@@ -82,16 +66,16 @@
                 <div ng-if="module.id === 'm_info'">
                     <div class="row top15">
                         <div class="col-sm-3">
-                            <p><b>Name:</b></p>{{petSelected.pet.name}}
+                            <p><b>Heart Rate:</b></p>{{petSelected.pet.heart_fre}}
                         </div>
                         <div class="col-sm-3">
-                            <p><b>Age:</b></p>{{petSelected.pet.age}}
+                            <p><b>Temperature:</b></p>{{petSelected.pet.temp}}
                         </div>
                         <div class="col-sm-3">
-                            <p><b>Gender:</b></p>{{petSelected.pet.gender}}
+                            <p><b>Weight:</b></p>{{petSelected.pet.weight}}
                         </div>
                         <div class="col-sm-3">
-                            <p><b>Race:</b></p>{{petSelected.pet.race}}
+                            <p><b>Breath per Minute:</b></p>{{petSelected.pet.resp_min}}
                         </div>
                     </div>
                     <h1 class="sub-header"><b>Race</b></h1>
